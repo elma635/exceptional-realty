@@ -1,4 +1,4 @@
-<!<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!--This is a comment. I can see it in the code, but
@@ -19,7 +19,7 @@
       <h2> Realty Group </h2>
 
       <!-- links -->
-      <!-- anchor el. to add links -- "a"ction" of changing to dif html page -->
+      <!-- anchor el. to add links - "a"ction" of changing to dif html page -->
       <!--href: tells broswer where we want link to go to -->
       <!-- when ppl click About text it'll take them to the link -->
       <a href="index.html">About</a>
@@ -38,7 +38,7 @@
       <!-- you have to explicitly tell browser (Src) where this img is -->
       <!-- src points to relative path of the img -->
       <!-- alt:  1) txt will be read  outloud for blind
-      <!-- title :  puts caption when mouse  hovers over pic.  -->
+      <!- title :  puts caption when mouse  hovers over pic.  -->
       <!-- tell it to go inside the img folder and load the intro-..file -->
       <img src="images/intro-pic.jpg" alt="A beautiful living room."
       title="Welcome to Exceptional Realty">
@@ -46,7 +46,7 @@
       <!-- foldername/ = go inside the folder
       filename = use a file in the current folder.
       ../ = leave the current folder & go up a level to the parent folder
-      <!-- each time you do ../ it leaves and looks in the upper folder for whatever you put down-->
+      <!- each time you do ../ it leaves and looks in the upper folder for whatever you put down-->
 
       <p> Lorem ipsum dolor sit amet, <br> <!-- takes everything and push it down to next line-->consectetur adipisicing elit, sed do eiusmod tempor
           incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -57,6 +57,20 @@
 
     <p>  Hello World. </p> <!-- <p> to seperate and put it on seperate lines -->
     <p>  Hello Moon. </p>
+
+    <!-- embed promo video -->
+    <!-- in opening tag of video el. - put control attr: so controls are always visible when video loads -->
+    <!-- add source el. & specify src attr = to point to video-go into videos folder, & put name  of video - "videos/real-estate.mp4" -->
+    <!-- type attr = what kind of video is it? mp4, ogv? -->
+    <!-- incase broswer doesn't support html content = add a clickable text link to download it from a site(Please upgrade browser"),
+      href attr= sets it to absolute link to go to  that site, target attr = _blank to open new tab for that site -->
+    <video controls>
+      <source src="videos/real-estate.mp4" type="video/mp4">
+        <source src="videos/real-estate.ogv" type="video/ogg">
+         Your broswer does not support HTML5 video. <a href="http://broswerhappy.com" target="_blank"> Please upgrade your broswer.</a>
+
+
+    </video>
 
 
   </body>
